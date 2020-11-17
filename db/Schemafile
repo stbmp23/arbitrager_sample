@@ -1,0 +1,62 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+create_table "exchanges", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4" do |t|
+  t.float "target_benefit", limit: 53, default: 0.0, comment: "目標利益(円)"
+  t.float "benefit", limit: 53, default: 0.0, comment: "獲得利益(円)"
+  t.boolean "result", default: false, comment: "実行結果"
+  t.datetime "created_at", null: false, comment: "作成日時"
+  t.datetime "updated_at", null: false, comment: "更新日時"
+end
+
+create_table "orders", id: :integer, comment: "注文ID", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4" do |t|
+  t.integer "exchange_id", comment: "取引ID"
+  t.integer "broker_id", null: false, comment: "取引所ID"
+  t.integer "action_id", null: false, comment: "売買タイプID"
+  t.float "target_price", limit: 53, null: false, comment: "指定金額"
+  t.float "target_volume", limit: 53, null: false, comment: "数量"
+  t.float "price", limit: 53, default: 0.0, comment: "結果金額"
+  t.float "volume", limit: 53, default: 0.0, comment: "結果数量"
+  t.float "fee", limit: 53, default: 0.0, comment: "手数料"
+  t.boolean "result", default: false, null: false, comment: "注文送信結果"
+  t.boolean "reverse_order_flg", default: false, null: false, comment: "反対売買フラグ"
+  t.string "order_acceptance_id", comment: "購入受付ID"
+  t.text "response", comment: "API実行結果"
+  t.boolean "execution_flg", default: false, null: false, comment: "約定完了フラグ"
+  t.boolean "cancel_flg", default: false, null: false, comment: "キャンセルフラグ"
+  t.datetime "started_at", null: false, comment: "注文開始日時"
+  t.datetime "canceled_at", comment: "キャンセル日時"
+  t.datetime "created_at", null: false, comment: "作成日時"
+  t.datetime "updated_at", null: false, comment: "更新日時"
+end
+
+create_table "trades", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4" do |t|
+  t.integer "broker_id", null: false, comment: "取引所ID"
+  t.string "order_id", comment: "注文ID"
+  t.string "order_acceptance_id", comment: "購入受付ID"
+  t.integer "action_id", null: false, comment: "売買タイプID"
+  t.float "price", limit: 53, default: 0.0, comment: "約定価格"
+  t.float "volume", limit: 53, default: 0.0, comment: "獲得数量"
+  t.float "fee", limit: 53, default: 0.0, comment: "手数料(数量)"
+  t.datetime "ordered_at", null: false, comment: "取引日時"
+  t.datetime "created_at", null: false, comment: "作成日時"
+  t.datetime "updated_at", null: false, comment: "更新日時"
+end
+
+create_table "balances", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4" do |t|
+  t.integer "broker_id", null: false, comment: "取引所ID"
+  t.float "jpy", limit: 53, default: 0.0, comment: "日本円"
+  t.float "btc", limit: 53, default: 0.0, comment: "BTC数量"
+  t.datetime "created_at", null: false, comment: "作成日時"
+  t.datetime "updated_at", null: false, comment: "更新日時"
+end
+
+create_table "balance_histories", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4" do |t|
+  t.integer "broker_id", null: false, comment: "取引所ID"
+  t.integer "exchange_id", comment: "取引ID"
+  t.float "jpy", limit: 53, default: 0.0, comment: "日本円"
+  t.float "btc", limit: 53, default: 0.0, comment: "BTC数量"
+  t.float "before_jpy", limit: 53, default: 0.0, comment: "日本円(取引前)"
+  t.float "before_btc", limit: 53, default: 0.0, comment: "BTC数量(取引前)"
+  t.datetime "created_at", null: false, comment: "作成日時"
+  t.datetime "updated_at", null: false, comment: "更新日時"
+end

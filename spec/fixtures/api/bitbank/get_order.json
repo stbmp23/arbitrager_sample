@@ -1,0 +1,16 @@
+{
+  "success": 1,
+  "data": {
+    "order_id": 123,
+    "pair": "string",
+    "side": "string",
+    "type": "string",
+    "start_amount": "string",
+    "remaining_amount": "string",
+    "executed_amount": "0.01",
+    "price": "string",
+    "average_price": "500.0",
+    "ordered_at": 0,
+    "status": "FULLY_FILLED"
+  }
+}

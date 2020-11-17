@@ -1,0 +1,35 @@
+{
+  "success": true,
+  "orders": [
+    {
+      "id": 12345,
+      "order_type": "buy",
+      "rate": 26890,
+      "pair": "btc_jpy",
+      "pending_amount": "0.5527",
+      "pending_market_buy_amount": null,
+      "stop_loss_rate": null,
+      "created_at": "2015-01-10T05:55:38.000Z"
+    },
+    {
+      "id": 202836,
+      "order_type": "sell",
+      "rate": 26990,
+      "pair": "btc_jpy",
+      "pending_amount": "0.77",
+      "pending_market_buy_amount": null,
+      "stop_loss_rate": null,
+      "created_at": "2015-01-10T05:55:38.000Z"
+    },
+    {
+      "id": 38632107,
+      "order_type": "buy",
+      "rate": null,
+      "pair": "btc_jpy",
+      "pending_amount": null,
+      "pending_market_buy_amount": "10000.0",
+      "stop_loss_rate": "50000.0",
+      "created_at": "2016-02-23T12:14:50.000Z"
+    }
+  ]
+}

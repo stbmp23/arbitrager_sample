@@ -1,0 +1,15 @@
+{
+  "success": 1,
+  "return": {
+    "received": 0.0005,
+    "remains": 0.0001,
+    "order_id": 298273768,
+    "funds": {
+      "jpy": 6.7746,
+      "btc": 0.0,
+      "xem": 1.5523,
+      "mona": 0.1,
+      "ZAIF": 6.7
+    }
+  }
+}

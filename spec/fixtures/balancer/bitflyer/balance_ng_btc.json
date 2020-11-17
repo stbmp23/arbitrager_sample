@@ -1,0 +1,9 @@
+[
+  {"currency_code":"JPY","amount":50000.0,"available":0.0},
+  {"currency_code":"BTC","amount":0.005,"available":0.0},
+  {"currency_code":"BCH","amount":0.0,"available":0.0},
+  {"currency_code":"ETH","amount":0.0,"available":0.0},
+  {"currency_code":"ETC","amount":0.0,"available":0.0},
+  {"currency_code":"LTC","amount":0.0,"available":0.0},
+  {"currency_code":"MONA","amount":0.0,"available":0.0}
+]

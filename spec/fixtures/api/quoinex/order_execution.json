@@ -1,0 +1,30 @@
+{
+  "id": 2157479,
+  "order_type": "limit",
+  "quantity": "0.01",
+  "disc_quantity": "0.0",
+  "iceberg_total_quantity": "0.0",
+  "side": "sell",
+  "filled_quantity": "0.01",
+  "price": "500.0",
+  "created_at": 1462123639,
+  "updated_at": 1462123639,
+  "status": "filled",
+  "leverage_level": 2,
+  "source_exchange": "QUOINE",
+  "product_id": 1,
+  "product_code": "CASH",
+  "funding_currency": "USD",
+  "currency_pair_code": "BTCUSD",
+  "order_fee": "0.0",
+  "executions": [
+    {
+      "id": 4566133,
+      "quantity": "0.01",
+      "price": "500.0",
+      "taker_side": "buy",
+      "my_side": "sell",
+      "created_at": 1465396785
+    }
+  ]
+}

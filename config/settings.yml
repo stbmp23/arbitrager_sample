@@ -1,0 +1,101 @@
+
+# 最小目標利益(円)
+# 裁定機会の期待収益がこの値より小さい場合は取引を行わない
+min_target_profit: 15.0
+
+# 最小目標収益割合(%)
+# 期待収益の裁定取引の円換算(取引価格*数量)に対する割合(%)がこれより小さい場合、取引を行わない
+min_target_profit_percent: 1.0
+
+# 最大目標収益(円)
+# 裁定機会の期待収益がこの値より大きい場合、取引を行わない。取引所が不正な価格を提示した場合の安全弁
+max_target_profit: 300
+
+# 最大ネットエクスポージャー
+# 取引所の合計ネットエクスポージャーの絶対値がこの値を超える場合、取引を行わない
+max_net_exposure: 0.1
+
+# 最大取引量
+max_size: 0.01
+
+# 最小取引量
+min_size: 0.01
+
+# 反対売買時に元のオーダーよりも指定%だけ不利な方向に指値価格を指定する
+limit_move_percent: 0.01
+
+# 約定が完了するまでに待つ時間(sec)
+wait_for_execution_time: 60
+
+# 再注文を出す時の待ち時間(sec)
+wait_for_send_order_retry_time: 1
+
+# 資産偏りの実行中の待ち時間(sec)
+wait_for_balancer_executing_time: 10
+# 資産確認のAPIのリトライ待ち時間(sec)
+wait_for_balancer_refresh_time: 1
+
+# 指値での購入時に加減算することで、購入を通りやすくする
+# ベストアスク, ベストビッドの金額に指定の金額が加減算される
+trade_add_price: 500
+
+# Balancer設定
+# thredhold: 閾値(資産がこの値以下になったら取引を行わない)
+balancer:
+  threshold:
+    jpy: 2000
+    btc: 0.001
+  check_wait_time: 30
+  wait_for_refresh: 3
+
+# 取引所別設定値
+#
+# commission_percent: 手数料(%)
+# priority: 注文時の優先順位(サーバが重い取引所は先に注文する)
+broker:
+  bitflyer:
+    id: 1
+    name: 'BitFlyer'
+    commission_percent: 0.10
+    priority: 4
+    enable: true
+  coincheck:
+    id: 2
+    name: 'CoinCheck'
+    commission_percent: 0
+    priority: 3
+    enable: false
+  zaif:
+    id: 3
+    name: 'Zaif'
+    commission_percent: 0
+    priority: 1
+    enable: true
+  quoinex:
+    id: 4
+    name: 'Quoinex'
+    commission_percent: 0
+    priority: 3
+    enable: false
+  bitbank:
+    id: 5
+    name: 'BitBank'
+    commission_percent: 0
+    priority: 3
+    enable: true
+  btcbox:
+    id: 6
+    name: 'BtcBox'
+    commission_percent: 0
+    priority: 2
+    enable: true
+
+# その他定数
+actions:
+  ask:
+    id: 1
+    name: 'ask'
+  bid:
+    id: 2
+    name: 'bid'
+

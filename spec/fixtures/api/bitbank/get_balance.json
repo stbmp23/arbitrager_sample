@@ -1,0 +1,81 @@
+{
+  "success": 1,
+  "data": {
+    "assets": [
+      {
+        "asset": "jpy",
+        "amount_precision": 4,
+        "onhand_amount": "0.0000",
+        "locked_amount": "0.0000",
+        "free_amount": "0.0000",
+        "stop_deposit": false,
+        "stop_withdrawal": false,
+        "withdrawal_fee": {
+          "threshold": "30000.0000",
+          "under": "540.0000",
+          "over": "756.0000"
+        }
+      },
+      {
+        "asset": "btc",
+        "amount_precision": 8,
+        "onhand_amount": "0.00000000",
+        "locked_amount": "0.00000000",
+        "free_amount": "0.00000000",
+        "stop_deposit": false,
+        "stop_withdrawal": false,
+        "withdrawal_fee": "0.00100000"
+      },
+      {
+        "asset": "ltc",
+        "amount_precision": 8,
+        "onhand_amount": "0.00000000",
+        "locked_amount": "0.00000000",
+        "free_amount": "0.00000000",
+        "stop_deposit": false,
+        "stop_withdrawal": false,
+        "withdrawal_fee": "0.00100000"
+      },
+      {
+        "asset": "xrp",
+        "amount_precision": 6,
+        "onhand_amount": "0.000000",
+        "locked_amount": "0.000000",
+        "free_amount": "0.000000",
+        "stop_deposit": false,
+        "stop_withdrawal": false,
+        "withdrawal_fee": "0.150000"
+      },
+      {
+        "asset": "eth",
+        "amount_precision": 8,
+        "onhand_amount": "0.00000000",
+        "locked_amount": "0.00000000",
+        "free_amount": "0.00000000",
+        "stop_deposit": false,
+        "stop_withdrawal": false,
+        "withdrawal_fee": "0.00500000"
+      },
+      {
+        "asset": "mona",
+        "amount_precision": 8,
+        "onhand_amount": "0.00000000",
+        "locked_amount": "0.00000000",
+        "free_amount": "0.00000000",
+        "stop_deposit": false,
+        "stop_withdrawal": false,
+        "withdrawal_fee": "0.00100000"
+      },
+      {
+        "asset": "bcc",
+        "amount_precision": 8,
+        "onhand_amount": "0.00000000",
+        "locked_amount": "0.00000000",
+        "free_amount": "0.00000000",
+        "stop_deposit": false,
+        "stop_withdrawal": false,
+        "withdrawal_fee": "0.00100000"
+      }
+    ]
+  }
+}

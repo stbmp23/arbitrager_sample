@@ -1,0 +1,17 @@
+default: &default
+  host: 127.0.01
+  port: 6379
+  password:
+
+development:
+  <<: *default
+  db: 10
+
+test:
+  <<: *default
+  db: 11
+
+production:
+  <<: *default
+  db: 1
+  password: <%= ENV['REDIS_PASSWORD'] %>

@@ -1,0 +1,60 @@
+{
+  "success": 1,
+  "return": {
+    "182": {
+      "currency_pair": "btc_jpy",
+      "action": "bid",
+      "amount": 0.01,
+      "price": 2000000,
+      "fee": 0,
+      "your_action": "ask",
+      "bonus": 1.6,
+      "timestamp": 1402018713,
+      "comment" : "demo"
+    },
+    "200": {
+      "currency_pair": "btc_jpy",
+      "action": "bid",
+      "amount": 0.01,
+      "price": 2000000,
+      "fee": 0.2,
+      "your_action": "ask",
+      "bonus": 1.6,
+      "timestamp": 1402018713,
+      "comment" : "demo"
+    },
+    "201": {
+      "currency_pair": "btc_jpy",
+      "action": "bid",
+      "amount": 0.01,
+      "price": 2000000,
+      "fee": 0,
+      "your_action": "ask",
+      "bonus": 1.6,
+      "timestamp": 1402018713,
+      "comment" : "demo"
+    },
+    "202": {
+      "currency_pair": "btc_jpy",
+      "action": "bid",
+      "amount": 0.04,
+      "price": 2000000,
+      "fee": 0,
+      "your_action": "bid",
+      "bonus": 1.6,
+      "timestamp": 1402018713,
+      "comment" : "demo"
+    },
+    "203": {
+      "currency_pair": "btc_jpy",
+      "action": "bid",
+      "amount": 0.01,
+      "price": 1999800,
+      "fee": 0,
+      "your_action": "ask",
+      "bonus": 1.6,
+      "timestamp": 1402018713,
+      "comment" : "demo"
+    }
+  }
+}
